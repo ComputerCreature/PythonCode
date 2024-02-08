@@ -1,3 +1,4 @@
+var list = []
 function read_input_number() {
     var n1 = document.getElementById("input_number").value;
     if (1 <= Number(n1) && Number(n1) <= 10) {
