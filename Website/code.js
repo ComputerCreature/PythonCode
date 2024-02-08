@@ -48,4 +48,6 @@ function add_code2(){
         `
     document.getElementById("c").innerHTML = code;
 }
-function input_word()
+function input_word(){
+    ;
+}
