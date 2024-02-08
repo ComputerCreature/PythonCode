@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>录入单词——法语单词录入查询系统</title>
+    <meta name="author" content="Casper">
+    <meta name="description" content="以输入或Excel的方式将法语单词录入进Access数据库中">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./code.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.8.9/brython.min.js?v=12345" charset="utf-8"></script>
+    <script type="text/python" charset="utf-8">
+        from browser import document
+        """
+            将文本放入div的方法：
+                document["id"].text = "some text"
+        """
+    </script>
+</head>
+<body onload="brython()">
+<div class="bb">法语单词录入</div>
+<p class="aba"><b>这里是法语单词录入界面，请按照下面的操作进行录入。</b></p>
+<p class="abb"><b>请问您是用输入的方式还是Excel的方式录入信息？</b></p>
+<div class="cc">
+    <input id="by1" type="button" value="输入方式" onclick="add_code1()" />
+    <input id="by2" type="button" value="Excel方式" onclick="add_code2()" />
+</div>
+<div id="b"></div>
+<div id="c"></div>
+</body>
+</html>
